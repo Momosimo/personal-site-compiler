@@ -14,7 +14,7 @@ then `npm start`.
 To only compile the site, run `npm run build`.
 
 Copy the contents of `dist` into the root dir
-of [this directory](https://github.com/Momosimo/momosimo.github.io)
+of [this repository](https://github.com/Momosimo/momosimo.github.io)
 to deploy the website.
 
 ## Questions? Comments? Concerns?
