@@ -60,12 +60,16 @@ html(lang='en')
                         | Nicholas 
                         span.text-primary Workman
                     .subheading.mb-0
-                        span.text-primary north carolina
-                        | born
-                        span.text-primary &
-                        | bred
+                        | north carolina
+                        span.text-primary born
+                        | &
+                        span.text-primary  bred
                     .p.mb-5
-                        a(href='mailto:nichol@sworkman.dev') nichol@sworkman.dev
+                        //- i.text-primary.fa-solid.fa-envelope
+                        a(href='mailto:nichol@sworkman.dev')
+                            i.fa-solid.fa-envelope
+                        a(href='mailto:nichol@sworkman.dev')
+                            | nichol@sworkman.dev
                     p.lead.mb-1
                         span.text-primary Experienced
                         | software engineer,
@@ -88,173 +92,194 @@ html(lang='en')
             // Experience
             section#experience.resume-section
                .resume-section-content
-                    h2.mb-5 Experience
+                    h1.mb-5 Experience
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
                             h3.mb-0 Artificial Intelligence Developer
-                            .subheading.mb-3 Ally
+                            a(href='https://www.ally.com/' target="_blank" rel="noopener noreferrer")
+                                .subheading.mb-3 Ally
                             //- p
                             //-     | Description
                         .flex-shrink-0
-                            span.text-primary Dec 2020 - Present
+                            p Dec 2020 - Present
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
                             h3.mb-0 Web Developer
-                            .subheading.mb-3 Freelance
+                            .subheading.text-primary.mb-3 Freelance
                             //- p
                             //-     | Description
                         .flex-shrink-0
-                            span.text-primary Dec 2018 - Present
+                            p Dec 2018 - Present
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
                             h3.mb-0 Full Stack Software Engineer
-                            .subheading.mb-3 Omnichain™
+                            a(href='https://www.omnichains.com/' target="_blank" rel="noopener noreferrer")
+                                .subheading.mb-3 Omnichain
                             //- p
                             //-     | Description
                         .flex-shrink-0
-                            span.text-primary Jun 2019 - Dec 2019
+                            p Jun 2019 - Dec 2019
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
                             h3.mb-0 Full Stack Developer
-                            .subheading.mb-3 HaulMi
+                            .subheading.text-primary.mb-3 HaulMi
                             //- p
                             //-     | Description
                         .flex-shrink-0
-                            span.text-primary Jan 2019 - Mar 2019
+                            p Jan 2019 - Mar 2019
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
                             h3.mb-0 Computational Linguist
-                            .subheading.mb-3 Credit Suisse
+                            a(href='https://www.credit-suisse.com/' target="_blank" rel="noopener noreferrer")
+                                .subheading.mb-3 Credit Suisse
                             //- p
                             //-     | Description
                         .flex-shrink-0
-                            span.text-primary Oct 2018 - Jan 2019
+                            p Oct 2018 - Jan 2019
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
                             h3.mb-0 Front End Developer &
                             h3.mb-0 Help Desk Administrator
-                            .subheading.mb-3 Greenlight Community Broadband
+                            a(href='https://www.greenlightnc.com/' target="_blank" rel="noopener noreferrer")
+                                .subheading.mb-3 Greenlight Community Broadband
                             //- p
                             //-     | Description
                         .flex-shrink-0
-                            span.text-primary Jan 2017 - Oct 2017
+                            p Jan 2017 - Oct 2017
 
                     .d-flex.flex-column.flex-md-row.justify-content-between
                         .flex-grow-1
                             h3.mb-0 Consultant (Portuguese Language)
-                            .subheading.mb-3 Center for Applied Linguistics
+                            a(href='https://www.cal.org/' target="_blank" rel="noopener noreferrer")
+                                .subheading.mb-3 Center for Applied Linguistics
                             //- p
                             //-     | Description
                         .flex-shrink-0
-                            span.text-primary May 2015 - Aug 2015   
+                            p May 2015 - Aug 2015   
 
             hr.m-0
 
             // Education
             section#education.resume-section
                 .resume-section-content
-                    h2.mb-5 Education
+                    h1.mb-5 Education
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
-                            h3.mb-0 Georgetown University
-                            .subheading.mb-3 Bachelor of Arts
+                            h3.mb-0 Georgetown University 
+                                a(href='https://www.georgetown.edu/' target="_blank" rel="noopener noreferrer")
+                                    i.fab.fa-solid.fa-earth-americas
+                            .subheading.text-primary.mb-3 Bachelor of Arts
                             div Linguistics
                             p Minors: Spanish, Portuguese
                         .flex-shrink-0
-                            span.text-primary Aug 2012 - Dec 2016
+                            p Aug 2012 - Dec 2016
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
                             h3.mb-0 Woodberry Forest School
-                            .subheading.mb-3 High School Diploma
+                                a(href='https://www.woodberry.org/' target="_blank" rel="noopener noreferrer")
+                                    i.fab.fa-solid.fa-earth-americas
+                            .subheading.text-primary.mb-3 High School Diploma
                             p Activities and societies: Varsity Wrestling Captain. Inducted into the Cum Laude Society - summa cum laude. President of the International Forum (a cultural exchange program for international students). Lead Prose Editor and co-Designer of The Talon (a CSPA-distinguished, student-run literary arts publication). Chemistry Award and Syracuse Book Award winner.
                             p 12 Trimester Walker Scholar (4.01+ GPA of 4.50 total); summa cum laude latin graduation honors.
                         .flex-shrink-0
-                            span.text-primary Aug 2008 - May 2012
+                            p Aug 2008 - May 2012
 
                     .d-flex.flex-column.flex-md-row.justify-content-between
                         .flex-grow-1
                             h3.mb-0 University of Oxford
-                            .subheading.mb-3 Study Abroad
+                                a(href='https://www.ox.ac.uk/' target="_blank" rel="noopener noreferrer")
+                                        i.fab.fa-solid.fa-earth-europe
+                            .subheading.text-primary.mb-3 Study Abroad
                             p Studied creative writing and general UK history; especially related to architecture, general religion, and Celtic imagery.
                             p With professors, we explored the countryside and wrote as we soaked in new experiences. Read and wrote constantly in-between semi-intensive analytical coursework.
                         .flex-shrink-0
-                            span.text-primary Jun 2011 - Aug 2011
+                            p Jun 2011 - Aug 2011
 
             hr.m-0
 
             // Volunteering
             section#volunteering.resume-section
                 .resume-section-content
-                    h2.mb-5 Volunteering
+                    h1.mb-5 Volunteering
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
                             h3.mb-0 Intern
-                            .subheading.mb-3 Greenlight Community Broadband
+                            a(href='https://www.greenlightnc.com/' target="_blank" rel="noopener noreferrer")
+                                .subheading.mb-3 Greenlight Community Broadband
                             p Shadowed the Creative Solutions Engineer daily, and occasionally picked up projects with other members of the engineering team in order to develop a broad, holistic sense of fiber optic networking procedures, web development, graphic design, video production, etc.
                         .flex-shrink-0
-                            span.text-primary May 2013 - Sep 2013 · 5 mos
+                            p May 2013 - Sep 2013 · 5 mos
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
                             h3.mb-0 Spanish-English Tutor
-                            .subheading.mb-3 DC Reads
+                            a(href='https://csj.georgetown.edu/csjprograms/dcreads/' target="_blank" rel="noopener noreferrer")
+                                .subheading.mb-3 DC Reads
                             p Worked mainly in Spanish with El Salvadoreño DC public school system students. Helped tutees acquire a better baseline understanding of the English language, as well as various topics such as general mathematics, earth science, American literature, etc.
                         .flex-shrink-0
-                            span.text-primary Aug 2012 - Jan 2014 · 1 yr 6 mos
+                            p Aug 2012 - Jan 2014 · 1 yr 6 mos
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
                             h3.mb-0 Translator
-                            .subheading.mb-3 City of Wilson
+                            a(href='https://www.wilsonnc.org/' target="_blank" rel="noopener noreferrer")
+                                .subheading.mb-3 City of Wilson
                             p Provided English to Spanish document translation services for the victims' assistance program at my local police department.
                         .flex-shrink-0
-                            span.text-primary Jun 2010 - Sep 2010 · 4 mos
+                            p Jun 2010 - Sep 2010 · 4 mos
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
                             h3.mb-0 Mentor
-                            .subheading.mb-3 Boys & Girls Clubs of America
+                            a(href='https://www.bgca.org/' target="_blank" rel="noopener noreferrer")
+                                .subheading.mb-3 Boys & Girls Clubs of America
                             p Served as a pen pal for several local children while in high school, and attended several school-sponsored events with mentees.
                         .flex-shrink-0
-                            span.text-primary Sep 2009 - May 2012 · 2 yrs 9 mos
+                            p Sep 2009 - May 2012 · 2 yrs 9 mos
 
                     .d-flex.flex-column.flex-md-row.justify-content-between
                         .flex-grow-1
                             h3.mb-0 Student Volunteer Abroad
-                            .subheading.mb-3 Woodberry Forest School
+                            a(href='https://www.woodberry.org/' target="_blank" rel="noopener noreferrer")
+                                .subheading.mb-3 Woodberry Forest School
                             p Volunteered in a Nicaraguan education and language/cultural exchange program in Estelí, Nicaragua. Lived with a host family within a fully-immersive Spanish language-learning environment. Minimal English exposure for the duration of the trip during non-teaching hours. Taught English as well as general school subjects to children aged 5-10. Took hours of daily, intensive Spanish-language courses. Performed manual day labor to improve local infrastructure. Met the National Nicaraguan Wrestling team with my professors!
                         .flex-shrink-0
-                            span.text-primary Jun 2009 - Aug 2009 · 3 mos
+                            p Jun 2009 - Aug 2009 · 3 mos
 
             hr.m-0
 
             // Projects
             section#projects.resume-section
                 .resume-section-content
-                    h2.mb-5 Projects
+                    h1.mb-5 Projects
                     .subheading.mb-1
-                        a(href='https://gmbjjwnc68.com/') GMBJJWNC68
+                        | GMBJJWNC68
                         | -
-                        a(href='https://github.com/gmbjjwnc68/gmbjjwnc68.github.io')
+                        a(href='https://github.com/gmbjjwnc68/gmbjjwnc68.github.io' target="_blank" rel="noopener noreferrer")
                             i.fab.fa-git-alt
+                        a(href='https://gmbjjwnc68.com/' target="_blank" rel="noopener noreferrer")
+                            i.fab.fa-solid.fa-globe
                     .p.mb-1
                         | Eastern NC Brazilian Jiu-Jitsu Team
                     ul.list-inline.dev-icons.mb-0
                         li.list-inline-item
-                            i.fab.fa-html5
+                            a(href='https://en.wikipedia.org/wiki/HTML' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-html5
                         li.list-inline-item
-                            i.fab.fa-sass
+                            a(href='https://en.wikipedia.org/wiki/Sass_(stylesheet_language)' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-sass
                         li.list-inline-item
-                            i.fab.fa-js-square
+                            a(href='https://en.wikipedia.org/wiki/JavaScript' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-js-square
                     ul.fa-ul.mb-5
                         li
                             span.fa-li
@@ -267,30 +292,37 @@ html(lang='en')
                         li
                             span.fa-li
                                 i.fas.fa-check
-                            | Highly ranked on Google via SEO
+                            | Highly ranked on Google Search
                         li
                             span.fa-li
                                 i.fas.fa-check
                             | Also uses: Jekyll & Ruby
 
                     .subheading.mb-1
-                        a(href='https://www.sworkman.dev/') Personal Website
+                        | Personal Website
                         | -
-                        a(href='https://github.com/Momosimo/momosimo.github.io')
+                        a(href='https://github.com/Momosimo/momosimo.github.io' target="_blank" rel="noopener noreferrer")
                             i.fab.fa-git-alt
+                        a(href='https://www.sworkman.dev/' target="_blank" rel="noopener noreferrer")
+                            i.fab.fa-solid.fa-globe
                     .p.mb-1
                         | Living Resume & Portfolio
                     ul.list-inline.dev-icons.mb-0
                         li.list-inline-item
-                            i.fab.fa-css3-alt
+                            a(href='https://en.wikipedia.org/wiki/CSS' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-css3-alt
                         li.list-inline-item
-                            i.fab.fa-sass
+                            a(href='https://en.wikipedia.org/wiki/Sass_(stylesheet_language)' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-sass
                         li.list-inline-item
-                            i.fab.fa-html5
+                            a(href='https://en.wikipedia.org/wiki/HTML' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-html5
                         li.list-inline-item
-                            i.fab.fa-js-square
+                            a(href='https://en.wikipedia.org/wiki/JavaScript' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-js-square
                         li.list-inline-item
-                            i.fab.fa-node
+                            a(href='https://en.wikipedia.org/wiki/Node.js' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-node
                     ul.fa-ul.mb-5
                         li
                             span.fa-li
@@ -298,21 +330,26 @@ html(lang='en')
                             | Stay a while, and listen...
 
                     .subheading.mb-1
-                        a(href='https://github.com/Momosimo/personal-site-compiler') Website Compiler
+                        | Website Compiler
                         | -
-                        a(href='https://github.com/Momosimo/personal-site-compiler')
+                        a(href='https://github.com/Momosimo/personal-site-compiler' target="_blank" rel="noopener noreferrer")
                             i.fab.fa-git-alt
+
                     .p.mb-1
                         | Leverages Node.js and npm to generate HTML & CSS
                     ul.list-inline.dev-icons.mb-0
                         li.list-inline-item
-                            i.fab.fa-sass
+                            a(href='https://en.wikipedia.org/wiki/Sass_(stylesheet_language)' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-sass
                         li.list-inline-item
-                            i.fab.fa-js-square
+                            a(href='https://en.wikipedia.org/wiki/JavaScript' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-js-square
                         li.list-inline-item
-                            i.fab.fa-node
+                            a(href='https://en.wikipedia.org/wiki/Node.js' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-node
                         li.list-inline-item
-                            i.fab.fa-npm
+                            a(href='https://en.wikipedia.org/wiki/Npm_(software)' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-npm
                     ul.fa-ul
                         li
                             span.fa-li
@@ -329,28 +366,38 @@ html(lang='en')
             // Skills
             section#skills.resume-section
                 .resume-section-content
-                    h2.mb-5 Skills
+                    h1.mb-5 Skills
                     .subheading.mb-3 Programming Languages & Tools
                     ul.list-inline.dev-icons
                         li.list-inline-item
+                        a(href='https://en.wikipedia.org/wiki/Python_(programming_language)' target="_blank" rel="noopener noreferrer")
                             i.fab.fa-python
                         li.list-inline-item
+                        a(href='https://en.wikipedia.org/wiki/JavaScript' target="_blank" rel="noopener noreferrer")
                             i.fab.fa-js-square
                         li.list-inline-item
+                        a(href='https://en.wikipedia.org/wiki/PHP' target="_blank" rel="noopener noreferrer")
                             i.fab.fa-php
                         li.list-inline-item
+                        a(href='https://en.wikipedia.org/wiki/Git' target="_blank" rel="noopener noreferrer")
                             i.fab.fa-git-alt
                         li.list-inline-item
+                        a(href='https://en.wikipedia.org/wiki/Node.js' target="_blank" rel="noopener noreferrer")
                             i.fab.fa-node
                         li.list-inline-item
-                            i.fab.fa-npm
+                            a(href='https://en.wikipedia.org/wiki/Npm_(software)' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-npm
                         li.list-inline-item
+                        a(href='https://en.wikipedia.org/wiki/Sass_(stylesheet_language)' target="_blank" rel="noopener noreferrer")
                             i.fab.fa-sass
                         li.list-inline-item
-                            i.fab.fa-html5
+                            a(href='https://en.wikipedia.org/wiki/HTML' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-html5
                         li.list-inline-item
+                        a(href='https://en.wikipedia.org/wiki/CSS' target="_blank" rel="noopener noreferrer")
                             i.fab.fa-css3-alt
                         li.list-inline-item
+                        a(href='https://en.wikipedia.org/wiki/WordPress' target="_blank" rel="noopener noreferrer")
                             i.fab.fa-wordpress
                     .subheading.mb-3 Attributes
                     ul.fa-ul.mb-3
@@ -404,21 +451,24 @@ html(lang='en')
             // Contact
             section#contact.resume-section
                 .resume-section-content
-                    h2.mb-5 Contact
+                    h1.mb-5 Contact
+                    .subheading.mb-3
+                        |  e-mail
+                        a(href='mailto:nichol@sworkman.dev')
+                                i.fa-solid.fa-envelope
+                    .subheading.mb-3
+                        |  smoke signal
+                        a(href='mailto:nichol@sworkman.dev')
+                            i.fa-solid.fa-smog
                     .subheading.mb-0
-                        |  e-mail: 
-                        a(href='mailto:nichol@sworkman.dev') nichol@sworkman.dev
-                    .subheading.mb-0
-                        |  smoke signal: 
-                        a(href='mailto:nichol@sworkman.dev') yes
-                    .subheading.mb-0
-                        |  carrier pigeon: 
-                        a(href='mailto:nichol@sworkman.dev') why not
+                        |  carrier pigeon
+                        a(href='mailto:nichol@sworkman.dev')
+                            i.fa-solid.fa-dove
 
             //- // Interests
             //- section#interests.resume-section
             //-     .resume-section-content
-            //-         h2.mb-5 Interests
+            //-         h1.mb-5 Interests
             //-         p
             //-             | I like to move it move it.
 
