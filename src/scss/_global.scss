@@ -46,3 +46,15 @@ p.lead {
     font-weight: 500;
     font-size: 1.5rem;
 }
+
+a:hover {
+  color: #ffffff;
+}
+
+.bg-primary {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  background-image: url(../assets/img/photos/IMG_1537.jpg);
+  background-size: cover;
+  background-position: center center;
+}
