@@ -4,7 +4,8 @@
 
 body {
     padding-top: $navbar-base-height;
-    color: $gray-600;
+    color: rgb(194, 194, 194);
+    background-color: #0c0c0c;
 }
 
 @include media-breakpoint-up(lg) {
@@ -25,6 +26,12 @@ h6 {
 
 h1 {
     line-height: 1;
+}
+
+h4 {
+    color: #6f87a1;
+    font-size: 1.4rem;
+    font-style: italic;
 }
 
 p.lead {
