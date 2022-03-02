@@ -16,6 +16,7 @@
         border-radius: 100%;
         font-size: 1.5rem;
         margin-right: 1.5rem;
+        opacity: 0.75;
 
         &:last-child {
             margin-right: 0;
@@ -23,6 +24,7 @@
 
         &:hover {
             background-color: $primary;
+            opacity: 1;
         }
     }
 }
@@ -30,4 +32,5 @@
 // Styling for the development technology icons
 .dev-icons {
     font-size: 3rem;
+    // opacity: 0.75;
 }
