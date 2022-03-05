@@ -13,14 +13,8 @@ then `npm start`.
 
 To only compile the site, run `npm run build`.
 
-To prepare `~/momosimo.github.io` for dist file population,
-`cd ~/momosimo.github.io` then `sh scrub.sh`.
-
-With `personal-site-compiler` and
-[this repository](https://github.com/Momosimo/momosimo.github.io)
-in the same directory,
-`cd ~/personal-site-compiler` and `sh populate.sh` to populate
-`momosimo.github.io` based on the contents of `~/personal-site-compiler/dist`.
+To populate `~/momosimo.github.io` with dist files from
+`~/personal-site-compiler`, `sh replenish.sh`.
 
 ## Questions? Comments? Concerns?
 
