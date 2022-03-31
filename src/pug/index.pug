@@ -56,27 +56,56 @@ html(lang='en')
             // Home
             section#home.resume-section
                 .resume-section-content
-                    h1.subheading.mb-0
-                        | ⠀
-                    h1.subheading.mb-0
-                        | ⠀
-                    h1.mb-3
+                    h1.mt-3.mb-2
                         | Nicholas 
                         span.text-primary Workman
-                    p.lead.mb-5
-                        span.text-primary Father,
-                        span.text-primary software engineer,
-                        span.text-primary linguist,
-                        | &
-                        span.text-primary more.
-                    .social-icons
+                    p.lead.mb-4.fs-4
+                        | Software engineer,
+                        | linguist,
+                        a.social-icon(onclick="easterEgg()") &
+                        | more.
+                    .social-icons.mb-4
                         a.social-icon(href='https://www.linkedin.com/in/nicholasworkman/' target="_blank" rel="noopener noreferrer")
                             i.fab.fa-linkedin-in
                         a.social-icon(href='https://github.com/Momosimo' target="_blank" rel="noopener noreferrer")
                             i.fab.fa-github
-                        a.social-icon(href="mailto:nichol@sworkman.dev" target="_blank" rel="noopener noreferrer")
+                        a.social-icon(href="mailto:hello@nicholasjworkman.com" target="_blank" rel="noopener noreferrer")
                             i.fa-solid.fa-envelope
 
+                    p.mb-2.fs-5.mt-4
+                        | Nicholas loves being a
+                    p.lead.mb-1.fs-5
+                        i.fas.fa-check
+                        span.text-primary ⠀Father
+                    p.lead.mb-1.fs-5
+                        i.fas.fa-check
+                        span.text-primary ⠀Fiancé
+                    p.lead.mb-3.fs-5
+                        i.fas.fa-check
+                        span.text-primary ⠀AI Engineer
+                    p.mb-2.fs-5
+                        | as well as a
+                    p.lead.mb-1.fs-5
+                        i.fas.fa-check
+                        span.text-primary ⠀Grappler
+                    p.lead.mb-1.fs-5
+                        i.fas.fa-check
+                        span.text-primary ⠀Guitarist
+                    p.lead.mb-1.fs-5
+                        i.fas.fa-check
+                        span.text-primary ⠀Web Developer
+                    p.lead.mb-5.fs-5
+                        i.fas.fa-check
+                        span.text-primary ⠀Computational Linguist
+                    p.lead.fs-5
+                        | Reach out, and let's deploy efficient, eloquent solutions to meet your modern
+                        | design & development needs.
+                    span.fs-5.social-icon(onclick="emailToClipboard()")
+                        i.fa-solid.fa-copy
+                        u Copy my email
+                    span.fs-5
+                        | to your clipboard.
+                    
             hr.m-0
 
             // Experience
@@ -84,75 +113,204 @@ html(lang='en')
                .resume-section-content
                     h1.span.mb-5 Experience
 
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-0
                         .flex-grow-1
                             .subheading.text-primary.mb-0 Artificial Intelligence Developer
                             a(href='https://www.ally.com/' target="_blank" rel="noopener noreferrer")
-                                .p.mb-3 Ally
+                                .p.mb-0 Ally
                             //- p
                             //-     | Description
                         .flex-shrink-0
                             p Dec 2020 - Present
+                    ul.list-inline.dev-icons.mb-5
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/GitLab' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-gitlab
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Git' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-git-alt
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Jenkins_(software)' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-jenkins
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Amazon_Web_Services' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-aws
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Python_(programming_language)' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-python
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/JavaScript' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-js-square
 
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-0
                         .flex-grow-1
                             .subheading.text-primary.mb-0 Web Developer
                             a(href='#projects')
-                                .p.mb-3 Freelance
+                                .p.mb-0 Freelance
                             //- p
                             //-     | Description
                         .flex-shrink-0
                             p Dec 2018 - Present
+                    ul.list-inline.dev-icons.mb-5
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Git' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-git-alt
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Amazon_Web_Services' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-aws
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Node.js' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-node
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Npm_(software)' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-npm
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Python_(programming_language)' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-python
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/JavaScript' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-js-square
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-bootstrap
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/HTML' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-html5
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Sass_(stylesheet_language)' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-sass
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/CSS' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-css3-alt
 
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-0
                         .flex-grow-1
                             .subheading.text-primary.mb-0 Full Stack Software Engineer
                             a(href='https://www.omnichains.com/' target="_blank" rel="noopener noreferrer")
-                                .p.mb-3 Omnichain
+                                .p.mb-0 Omnichain
                             //- p
                             //-     | Description
                         .flex-shrink-0
                             p Jun 2019 - Dec 2019
+                    ul.list-inline.dev-icons.mb-0
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/GitLab' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-gitlab
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Jenkins_(software)' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-jenkins
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Amazon_Web_Services' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-aws
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/PHP' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-php
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/JavaScript' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-js-square
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Python_(programming_language)' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-python
+                    p.mb-5 Also used: MySQL, Postman
 
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-0
                         .flex-grow-1
                             .subheading.text-primary.mb-0 Full Stack Developer
                             a(href='http://www.haulmi.com/' target="_blank" rel="noopener noreferrer")
-                                .p.mb-3 HaulMi
+                                .p.mb-0 HaulMi
                             //- p
                             //-     | Description
                         .flex-shrink-0
                             p Jan 2019 - Mar 2019
+                    ul.list-inline.dev-icons.mb-5
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Git' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-git-alt
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Node.js' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-node
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Npm_(software)' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-npm
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/HTML' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-html5
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/JavaScript' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-js-square
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/CSS' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-css3-alt
 
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-0
                         .flex-grow-1
                             .subheading.text-primary.mb-0 Computational Linguist
                             a(href='https://www.credit-suisse.com/' target="_blank" rel="noopener noreferrer")
-                                .p.mb-3 Credit Suisse
+                                .p.mb-0 Credit Suisse
                             //- p
                             //-     | Description
                         .flex-shrink-0
                             p Oct 2018 - Jan 2019
+                    ul.list-inline.dev-icons.mb-0
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Amazon_Web_Services' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-aws
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Git' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-git-alt
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Python_(programming_language)' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-python
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/JavaScript' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-js-square
+                    p.mb-5 Also used: Groovy
 
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-0
                         .flex-grow-1
                             .subheading.text-primary.mb-0 Front End Developer & Help Desk Administrator
                             a(href='https://www.greenlightnc.com/' target="_blank" rel="noopener noreferrer")
-                                .p.mb-3 Greenlight Community Broadband
+                                .p.mb-0 Greenlight Community Broadband
                             //- p
                             //-     | Description
                         .flex-shrink-0
                             p Jan 2017 - Oct 2017
+                    ul.list-inline.dev-icons.mb-0
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/WordPress' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-wordpress
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/PHP' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-php
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Python_(programming_language)' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-python
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/JavaScript' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-js-square
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/HTML' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-html5
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/CSS' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-css3-alt
+                    p.mb-5 Also used: MySQL
 
                     .d-flex.flex-column.flex-md-row.justify-content-between
                         .flex-grow-1
                             .subheading.text-primary.mb-0 Consultant (Portuguese Language)
                             a(href='https://www.cal.org/' target="_blank" rel="noopener noreferrer")
-                                .p.mb-3 Center for Applied Linguistics
+                                .p.mb-0 Center for Applied Linguistics
                             //- p
                             //-     | Description
                         .flex-shrink-0
-                            p May 2015 - Aug 2015   
+                            p May 2015 - Aug 2015
+                    ul.list-inline.dev-icons.mb-0
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Python_(programming_language)' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-python
+                    p.mb-5 Also used: MySQL
 
             hr.m-0
 
@@ -187,18 +345,15 @@ html(lang='en')
                         li
                             span.fa-li
                                 i.fas.fa-check
-                            | Also uses: 
-                            b Jekyll
-                            | & 
-                            b Ruby
+                            | Also uses: Jekyll, Ruby
                         li
                             span.fa-li
                                 i.fas.fa-check
-                            | High Google search ranking: 36.9% of new users come from organic search
+                            | High Google search ranking: 36.9% of new users come from organic search.
                         li
                             span.fa-li
                                 i.fas.fa-check
-                            | Social media integration: 42.6% of new users originate from social media
+                            | Social media integration: 42.6% of new users originate from social media.
                         li
                             span.fa-li
                                 i.fas.fa-check
@@ -277,52 +432,16 @@ html(lang='en')
                                 i.fas.fa-check
                             | Discourse parses in Rhetorical Structure Theory and discourse dependencies
 
-                    //- .subheading.mb-1
-                    //-     span.text-primary Personal Website
-                    //-     | ⠀
-                    //-     a(href='https://www.sworkman.dev/' target="_blank" rel="noopener noreferrer")
-                    //-         i.fab.fa-solid.fa-globe
-                    //-     | ⠀
-                    //-     a(href='https://github.com/Momosimo/momosimo.github.io' target="_blank" rel="noopener noreferrer")
-                    //-         i.fab.fa-git-alt
-                    //- .p.mb-1
-                    //-     | Interactive Resume & Portfolio
-                    //- ul.list-inline.dev-icons.mb-0
-                    //-     li.list-inline-item
-                    //-         a(href='https://en.wikipedia.org/wiki/HTML' target="_blank" rel="noopener noreferrer")
-                    //-             i.fab.fa-html5
-                    //-     li.list-inline-item
-                    //-         a(href='https://en.wikipedia.org/wiki/JavaScript' target="_blank" rel="noopener noreferrer")
-                    //-             i.fab.fa-js-square
-                    //-     li.list-inline-item
-                    //-         a(href='https://en.wikipedia.org/wiki/Sass_(stylesheet_language)' target="_blank" rel="noopener noreferrer")
-                    //-             i.fab.fa-sass
-                    //-     li.list-inline-item
-                    //-         a(href='https://en.wikipedia.org/wiki/CSS' target="_blank" rel="noopener noreferrer")
-                    //-             i.fab.fa-css3-alt
-                    //-     li.list-inline-item
-                    //-         a(href='https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)' target="_blank" rel="noopener noreferrer")
-                    //-             i.fab.fa-bootstrap
-                    //-     li.list-inline-item
-                    //-         a(href='https://en.wikipedia.org/wiki/Node.js' target="_blank" rel="noopener noreferrer")
-                    //-             i.fab.fa-node
-                    //- ul.fa-ul.mb-5
-                    //-     li
-                    //-         span.fa-li
-                    //-             i.fas.fa-check
-                    //-         | Also uses: Jekyll
-                    //-     li
-                    //-         span.fa-li
-                    //-             i.fas.fa-check
-                    //-         | Average engagement time: 6m 09s
-
                     .subheading.mb-1
-                        span.text-primary Website Generator
+                        span.text-primary Personal Website
                         | ⠀
-                        a(href='https://github.com/Momosimo/personal-site-compiler' target="_blank" rel="noopener noreferrer")
+                        a(href='https://www.sworkman.dev/' target="_blank" rel="noopener noreferrer")
+                            i.fab.fa-solid.fa-globe
+                        | ⠀
+                        a(href='https://github.com/Momosimo/momosimo.github.io' target="_blank" rel="noopener noreferrer")
                             i.fab.fa-git-alt
                     .p.mb-1
-                        | Leverages Node.js & npm to generate HTML & CSS
+                        | Interactive Resume & Portfolio
                     ul.list-inline.dev-icons.mb-0
                         li.list-inline-item
                             a(href='https://en.wikipedia.org/wiki/HTML' target="_blank" rel="noopener noreferrer")
@@ -342,18 +461,54 @@ html(lang='en')
                         li.list-inline-item
                             a(href='https://en.wikipedia.org/wiki/Node.js' target="_blank" rel="noopener noreferrer")
                                 i.fab.fa-node
-                        li.list-inline-item
-                            a(href='https://en.wikipedia.org/wiki/Npm_(software)' target="_blank" rel="noopener noreferrer")
-                                i.fab.fa-npm
-                    ul.fa-ul.mb-0
+                    ul.fa-ul.mb-5
                         li
                             span.fa-li
                                 i.fas.fa-check
-                            | Also uses: Pug
+                            | Also uses: Jekyll, Pug
                         li
                             span.fa-li
                                 i.fas.fa-check
-                            | Generated the website you are on right now!
+                            | Average engagement time: 6m 09s
+
+                    //- .subheading.mb-1
+                    //-     span.text-primary Website Generator
+                    //-     | ⠀
+                    //-     a(href='https://github.com/Momosimo/personal-site-compiler' target="_blank" rel="noopener noreferrer")
+                    //-         i.fab.fa-git-alt
+                    //- .p.mb-1
+                    //-     | Leverages Node.js & npm to generate HTML & CSS
+                    //- ul.list-inline.dev-icons.mb-0
+                    //-     li.list-inline-item
+                    //-         a(href='https://en.wikipedia.org/wiki/HTML' target="_blank" rel="noopener noreferrer")
+                    //-             i.fab.fa-html5
+                    //-     li.list-inline-item
+                    //-         a(href='https://en.wikipedia.org/wiki/JavaScript' target="_blank" rel="noopener noreferrer")
+                    //-             i.fab.fa-js-square
+                    //-     li.list-inline-item
+                    //-         a(href='https://en.wikipedia.org/wiki/Sass_(stylesheet_language)' target="_blank" rel="noopener noreferrer")
+                    //-             i.fab.fa-sass
+                    //-     li.list-inline-item
+                    //-         a(href='https://en.wikipedia.org/wiki/CSS' target="_blank" rel="noopener noreferrer")
+                    //-             i.fab.fa-css3-alt
+                    //-     li.list-inline-item
+                    //-         a(href='https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)' target="_blank" rel="noopener noreferrer")
+                    //-             i.fab.fa-bootstrap
+                    //-     li.list-inline-item
+                    //-         a(href='https://en.wikipedia.org/wiki/Node.js' target="_blank" rel="noopener noreferrer")
+                    //-             i.fab.fa-node
+                    //-     li.list-inline-item
+                    //-         a(href='https://en.wikipedia.org/wiki/Npm_(software)' target="_blank" rel="noopener noreferrer")
+                    //-             i.fab.fa-npm
+                    //- ul.fa-ul.mb-0
+                    //-     li
+                    //-         span.fa-li
+                    //-             i.fas.fa-check
+                    //-         | Also uses: Pug
+                    //-     li
+                    //-         span.fa-li
+                    //-             i.fas.fa-check
+                    //-         | Generated the website you are on right now!
 
             hr.m-0
 
@@ -363,6 +518,33 @@ html(lang='en')
                     h1.span.mb-5 Skills
                     .subheading.text-primary.mb-2 Programming Languages & Tools
                     ul.list-inline.dev-icons
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Amazon_Web_Services' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-aws
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/GitLab' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-gitlab
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Jenkins_(software)' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-jenkins
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Bitbucket' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-bitbucket
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Node.js' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-node
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Npm_(software)' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-npm
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Git' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-git-alt
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/WordPress' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-wordpress
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/PHP' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-php
                         li.list-inline-item
                             a(href='https://en.wikipedia.org/wiki/Python_(programming_language)' target="_blank" rel="noopener noreferrer")
                                 i.fab.fa-python
@@ -381,29 +563,12 @@ html(lang='en')
                         li.list-inline-item
                             a(href='https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)' target="_blank" rel="noopener noreferrer")
                                 i.fab.fa-bootstrap
-                        li.list-inline-item
-                            a(href='https://en.wikipedia.org/wiki/Node.js' target="_blank" rel="noopener noreferrer")
-                                i.fab.fa-node
-                        li.list-inline-item
-                            a(href='https://en.wikipedia.org/wiki/Npm_(software)' target="_blank" rel="noopener noreferrer")
-                                i.fab.fa-npm
-                        li.list-inline-item
-                            a(href='https://en.wikipedia.org/wiki/Git' target="_blank" rel="noopener noreferrer")
-                                i.fab.fa-git-alt
-                        li.list-inline-item
-                            a(href='https://en.wikipedia.org/wiki/WordPress' target="_blank" rel="noopener noreferrer")
-                                i.fab.fa-wordpress
-                        li.list-inline-item
-                            a(href='https://en.wikipedia.org/wiki/PHP' target="_blank" rel="noopener noreferrer")
-                                i.fab.fa-php
-                        li.list-inline-item
-                            a(href='https://en.wikipedia.org/wiki/Amazon_Web_Services' target="_blank" rel="noopener noreferrer")
-                                i.fab.fa-aws
+
                     ul.fa-ul.mb-5
                         li
                             span.fa-li
                                 i.fas.fa-check
-                            | Additional skills & tools: MySQL, Rasa, ML, NLP, NLTK
+                            | Additional skills & tools: MySQL, Rasa, ML, NLP, NLTK, Postman
                         li
                             span.fa-li
                                 i.fas.fa-check
@@ -459,7 +624,7 @@ html(lang='en')
                             .subheading.h4.mb-3 Bachelor of Arts
                             div Linguistics
                             p Minors: Spanish, Portuguese
-                            p Activities and societies: Georgetown Undergraduate Linguistics Society (GULS), Spanish and Portuguese Club, Hawaii Club
+                            p Activities and societies: Georgetown Undergraduate Linguistics Society (GULS), Spanish and Portuguese Club, Hawaii Club.
                         .flex-shrink-0
                             p Aug 2012 - Dec 2016
 
@@ -527,7 +692,7 @@ html(lang='en')
                         .flex-shrink-0
                             p Jun 2010 - Sep 2010
 
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                    .d-flex.flex-column.flex-md-row.justify-content-between
                         .flex-grow-1
                             .subheading.text-primary.mb-0 Mentor
                             a(href='https://www.bgca.org/' target="_blank" rel="noopener noreferrer")
@@ -540,25 +705,27 @@ html(lang='en')
 
             // Contact
             section#contact.resume-section
-                .resume-section-content.mb-5
+                .resume-section-content
                     h1.span.mb-5 Contact
-                    .subheading.mb-3
-                        | e-mail⠀
-                        a(href="mailto:nichol@sworkman.dev?subject=About%20your%20website...&body=Hello!%20My%20name%20is%20____%20and%20here%20is%20what%20you%20can%20do%20for%20me%3A" target="_blank" rel="noopener noreferrer")
-                                i.fa-solid.fa-envelope
-                    .subheading.mb-3
-                        | carrier pigeon⠀
-                        a(href='mailto:nichol@sworkman.dev' target="_blank" rel="noopener noreferrer")
-                            i.fa-solid.fa-dove
-                    .subheading.mb-5
-                        | smoke signal⠀
-                        a(href='mailto:nichol@sworkman.dev' target="_blank" rel="noopener noreferrer")
+                    h2.social-icon.mb-5
+                        a.social-icon(onclick="emailToClipboard()")
+                            i.fa-solid.fa-envelope
+                        | ⠀
+                        a.social-icon(onclick="emailToClipboard()")
                             i.fa-solid.fa-smog
-                            
-                    a(href="mailto:nichol@sworkman.dev?subject=About%20your%20website...&body=Hello!%20My%20name%20is%20____%20and%20here%20is%20what%20you%20can%20do%20for%20me%3A" target="_blank" rel="noopener noreferrer")
-                        i.fa-solid.fa-envelope
-                    | ⠀
-                    | nichol@sworkman.dev
+                        | ⠀
+                        a.social-icon(onclick="emailToClipboard()")
+                            i.fa-solid.fa-dove
+                        | ⠀
+                        a.social-icon(onclick="emailToClipboard()")
+                            i.fa-solid.fa-copy
+                    p.lead.mb-5.fs-5
+                        | Click any of the above to copy my email to your clipboard.
+                    p.lead.mb-0.fs-5
+                        | Click
+                        a.social-icon(href="mailto:hello@nicholasjworkman.com" target="_blank" rel="noopener noreferrer")
+                            | here
+                        | to open your default email app automatically.
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
