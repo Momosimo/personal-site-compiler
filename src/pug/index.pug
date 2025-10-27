@@ -58,14 +58,11 @@ html(lang='en')
             // Home
             section#home.resume-section
                 .resume-section-content
-                    h1.mt-3.mb-2
+                    h1.mt-3.mb-3
                         | Nicholas 
                         span.text-primary Workman
-                    p.lead.mb-4.fs-4
-                        | Father,
-                        | software engineer,
-                        a.social-icon(onclick="easterEgg()") &
-                        | linguist.
+                    p.lead.fs-5
+                        | Reach out, and let's deploy efficient solutions to meet your modern needs.
                     .social-icons.mb-4
                         a.social-icon(href='https://www.linkedin.com/in/nicholasworkman/' target="_blank" rel="noopener noreferrer")
                             i.fab.fa-linkedin-in
@@ -73,8 +70,6 @@ html(lang='en')
                             i.fab.fa-github
                         a.social-icon(href="mailto:hello@nicholasjworkman.com" target="_blank" rel="noopener noreferrer")
                             i.fa-solid.fa-envelope
-                    p.lead.fs-5
-                        | Reach out, and let's deploy efficient solutions to meet your modern development needs.
                     span.fs-5.social-icon(onclick="emailToClipboard()")
                         i.fa-solid.fa-copy.me-2
                         u Copy my email
@@ -88,9 +83,49 @@ html(lang='en')
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-0
                         .flex-grow-1
+                            .subheading.text-primary.mb-0 Web Developer
+                            a(href='#projects')
+                                .p.mb-0 Freelance
+                        .flex-shrink-0
+                            p Dec 2018 - Present
+                    ul.list-inline.dev-icons.mb-0
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Python_(programming_language)' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-python
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/JavaScript' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-js-square
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-bootstrap
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/HTML' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-html5
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/CSS' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-css3-alt
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Git' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-git-alt
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Sass_(stylesheet_language)' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-sass
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Node.js' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-node
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Npm_(software)' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-npm
+                        li.list-inline-item
+                            a(href='https://en.wikipedia.org/wiki/Amazon_Web_Services' target="_blank" rel="noopener noreferrer")
+                                i.fab.fa-aws
+                    p.mb-5 Also used: Pug
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-0
+                        .flex-grow-1
                             .subheading.text-primary.mb-0 Professional Services Manager, Maxavera & STO
                         .flex-shrink-0
-                            p Aug 2025 - Present
+                            p Aug 2025 - Oct 2025
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-0
                         .flex-grow-1
                             .subheading.text-primary.mb-0 Professional Services Manager, Maxavera
@@ -156,46 +191,6 @@ html(lang='en')
                         li.list-inline-item
                             a(href='https://en.wikipedia.org/wiki/Amazon_Web_Services' target="_blank" rel="noopener noreferrer")
                                 i.fab.fa-aws
-
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-0
-                        .flex-grow-1
-                            .subheading.text-primary.mb-0 Web Developer
-                            a(href='#projects')
-                                .p.mb-0 Freelance
-                        .flex-shrink-0
-                            p Dec 2018 - Dec 2020
-                    ul.list-inline.dev-icons.mb-0
-                        li.list-inline-item
-                            a(href='https://en.wikipedia.org/wiki/Python_(programming_language)' target="_blank" rel="noopener noreferrer")
-                                i.fab.fa-python
-                        li.list-inline-item
-                            a(href='https://en.wikipedia.org/wiki/JavaScript' target="_blank" rel="noopener noreferrer")
-                                i.fab.fa-js-square
-                        li.list-inline-item
-                            a(href='https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)' target="_blank" rel="noopener noreferrer")
-                                i.fab.fa-bootstrap
-                        li.list-inline-item
-                            a(href='https://en.wikipedia.org/wiki/HTML' target="_blank" rel="noopener noreferrer")
-                                i.fab.fa-html5
-                        li.list-inline-item
-                            a(href='https://en.wikipedia.org/wiki/CSS' target="_blank" rel="noopener noreferrer")
-                                i.fab.fa-css3-alt
-                        li.list-inline-item
-                            a(href='https://en.wikipedia.org/wiki/Git' target="_blank" rel="noopener noreferrer")
-                                i.fab.fa-git-alt
-                        li.list-inline-item
-                            a(href='https://en.wikipedia.org/wiki/Sass_(stylesheet_language)' target="_blank" rel="noopener noreferrer")
-                                i.fab.fa-sass
-                        li.list-inline-item
-                            a(href='https://en.wikipedia.org/wiki/Node.js' target="_blank" rel="noopener noreferrer")
-                                i.fab.fa-node
-                        li.list-inline-item
-                            a(href='https://en.wikipedia.org/wiki/Npm_(software)' target="_blank" rel="noopener noreferrer")
-                                i.fab.fa-npm
-                        li.list-inline-item
-                            a(href='https://en.wikipedia.org/wiki/Amazon_Web_Services' target="_blank" rel="noopener noreferrer")
-                                i.fab.fa-aws
-                    p.mb-5 Also used: Pug
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-0
                         .flex-grow-1
@@ -674,7 +669,7 @@ html(lang='en')
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
                             .subheading.text-primary.mb-0 Instructor
-                            a(href='https://www.gmbjjwnc68.com/' target="_blank" rel="noopener noreferrer")
+                            a(href='https://www.gmbjjwnc.com/' target="_blank" rel="noopener noreferrer")
                                 p.mb-3 Gustavo Machado Brazilian Jiu-Jitsu of Wilson NC
                             p Taught kids aged 4-12 general self-defense with Brazilian Jiu-Jitsu techniques and led coordination-increasing activities.
                         .flex-shrink-0
