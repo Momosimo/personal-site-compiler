@@ -2,10 +2,6 @@
 
 Generates my personal website.
 
-## https://www.nicholasjworkman.com/
-
-Visit me at [my website](https://www.nicholasjworkman.com/)!
-
 ## Using this repository
 
 To run the site locally, checkout the `main` branch and run `npm install`
@@ -18,6 +14,7 @@ To populate `~/momosimo.github.io` with dist files from
 
 ## Questions? Comments? Concerns?
 
-Please reach out to me at hello@nicholasjworkman.com with any questions, etc.
+Please reach out to me at hello{at}nicholasjworkman{dot}com
+with any questions, et cetera.
 This repository was created and is maintained
 by [Momosimo](https://github.com/Momosimo).
