@@ -32,8 +32,8 @@ html(lang='en')
                         a.nav-link.js-scroll-trigger(href='#experience') Experience
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#projects') Projects
-                    li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#skills') Skills
+                    //- li.nav-item
+                    //-     a.nav-link.js-scroll-trigger(href='#skills') Skills
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#education') Education
                     li.nav-item
@@ -133,7 +133,7 @@ html(lang='en')
                         li.list-inline-item
                             a(href='https://en.wikipedia.org/wiki/Amazon_Web_Services' target="_blank" rel="noopener noreferrer")
                                 i.fab.fa-aws
-                    p.mb-5 Used: Python, JavaScript, Excel, VBA, AWS, SQL
+                    p.mb-5 Used: Python, JavaScript, Excel, VBA, AWS, SQL, Postgres
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-0
                         .flex-grow-1
                             .subheading.text-primary.mb-0 Senior Software Engineer
@@ -167,7 +167,7 @@ html(lang='en')
                         li.list-inline-item
                             a(href='https://en.wikipedia.org/wiki/Amazon_Web_Services' target="_blank" rel="noopener noreferrer")
                                 i.fab.fa-aws
-                    p.mb-5 Used: Python, JavaScript, Git, Jenkins, GitLab, AWS, SQL
+                    p.mb-5 Used: Python, JavaScript, Git, Jenkins, GitLab, AWS, SQL, Docker, Terraform
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-0
                         .flex-grow-1
                             .subheading.text-primary.mb-0 Full Stack Software Engineer
@@ -458,81 +458,81 @@ html(lang='en')
                             | Convenient cross-platform dev setup, powered by npm
             hr.m-0
             // Skills
-            section#skills.resume-section
-                .resume-section-content
-                    h1.span.mb-5 Skills
-                    span.subheading.text-muted.me-5 tier
-                    span.subheading.text-muted tool
-                    ul.list-inline.dev-icons
-                        li.list-inline-item.me-3
-                            | S+
-                        li.list-inline-item
-                            a(href='https://en.wikipedia.org/wiki/Python_(programming_language)' target="_blank" rel="noopener noreferrer")
-                                i.fab.fa-python
-                    ul.list-inline.dev-icons
-                        li.list-inline-item.me-5
-                            | S
-                        li.list-inline-item
-                            a(href='https://en.wikipedia.org/wiki/Microsoft_Excel' target="_blank" rel="noopener noreferrer")
-                                i.fa.fa-file-excel
-                        li.list-inline-item
-                            a(href='https://en.wikipedia.org/wiki/JavaScript' target="_blank" rel="noopener noreferrer")
-                                i.fab.fa-js-square
-                        li.list-inline-item
-                            a(href='https://en.wikipedia.org/wiki/Amazon_Web_Services' target="_blank" rel="noopener noreferrer")
-                                i.fab.fa-aws
-                    ul.list-inline.dev-icons
-                        li.list-inline-item.me-5
-                            | A
-                        li.list-inline-item
-                            a(href='https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)' target="_blank" rel="noopener noreferrer")
-                                i.fab.fa-bootstrap
-                        li.list-inline-item
-                            a(href='https://en.wikipedia.org/wiki/Git' target="_blank" rel="noopener noreferrer")
-                                i.fab.fa-git-alt
-                        li.list-inline-item
-                            a(href='https://en.wikipedia.org/wiki/Jenkins_(software)' target="_blank" rel="noopener noreferrer")
-                                i.fab.fa-jenkins
-                    ul.list-inline.dev-icons
-                        li.list-inline-item.me-5
-                            | B
-                        li.list-inline-item
-                            a(href='https://en.wikipedia.org/wiki/HTML' target="_blank" rel="noopener noreferrer")
-                                i.fab.fa-html5
-                        li.list-inline-item
-                            a(href='https://en.wikipedia.org/wiki/CSS' target="_blank" rel="noopener noreferrer")
-                                i.fab.fa-css3-alt
-                        li.list-inline-item
-                            a(href='https://en.wikipedia.org/wiki/Sass_(stylesheet_language)' target="_blank" rel="noopener noreferrer")
-                                i.fab.fa-sass
-                    ul.fa-ul.mb-5
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | Additional skills & tools: SQL, Rasa, ML, NLP, NLTK, Postman, Bitbucket
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | Mobile-friendly, modern, & responsive design
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | Secure, efficient, & detail-oriented work
-                    .subheading.text-primary.mb-2 Spoken Languages
-                    ul.fa-ul.mb-0
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | English
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | Spanish
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | Portuguese
-            hr.m-0
+            //- section#skills.resume-section
+            //-     .resume-section-content
+            //-         h1.span.mb-5 Skills
+            //-         span.subheading.text-muted.me-5 tier
+            //-         span.subheading.text-muted tool
+            //-         ul.list-inline.dev-icons
+            //-             li.list-inline-item.me-3
+            //-                 | S+
+            //-             li.list-inline-item
+            //-                 a(href='https://en.wikipedia.org/wiki/Python_(programming_language)' target="_blank" rel="noopener noreferrer")
+            //-                     i.fab.fa-python
+            //-         ul.list-inline.dev-icons
+            //-             li.list-inline-item.me-5
+            //-                 | S
+            //-             li.list-inline-item
+            //-                 a(href='https://en.wikipedia.org/wiki/Microsoft_Excel' target="_blank" rel="noopener noreferrer")
+            //-                     i.fa.fa-file-excel
+            //-             li.list-inline-item
+            //-                 a(href='https://en.wikipedia.org/wiki/JavaScript' target="_blank" rel="noopener noreferrer")
+            //-                     i.fab.fa-js-square
+            //-             li.list-inline-item
+            //-                 a(href='https://en.wikipedia.org/wiki/Amazon_Web_Services' target="_blank" rel="noopener noreferrer")
+            //-                     i.fab.fa-aws
+            //-         ul.list-inline.dev-icons
+            //-             li.list-inline-item.me-5
+            //-                 | A
+            //-             li.list-inline-item
+            //-                 a(href='https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)' target="_blank" rel="noopener noreferrer")
+            //-                     i.fab.fa-bootstrap
+            //-             li.list-inline-item
+            //-                 a(href='https://en.wikipedia.org/wiki/Git' target="_blank" rel="noopener noreferrer")
+            //-                     i.fab.fa-git-alt
+            //-             li.list-inline-item
+            //-                 a(href='https://en.wikipedia.org/wiki/Jenkins_(software)' target="_blank" rel="noopener noreferrer")
+            //-                     i.fab.fa-jenkins
+            //-         ul.list-inline.dev-icons
+            //-             li.list-inline-item.me-5
+            //-                 | B
+            //-             li.list-inline-item
+            //-                 a(href='https://en.wikipedia.org/wiki/HTML' target="_blank" rel="noopener noreferrer")
+            //-                     i.fab.fa-html5
+            //-             li.list-inline-item
+            //-                 a(href='https://en.wikipedia.org/wiki/CSS' target="_blank" rel="noopener noreferrer")
+            //-                     i.fab.fa-css3-alt
+            //-             li.list-inline-item
+            //-                 a(href='https://en.wikipedia.org/wiki/Sass_(stylesheet_language)' target="_blank" rel="noopener noreferrer")
+            //-                     i.fab.fa-sass
+            //-         ul.fa-ul.mb-5
+            //-             li
+            //-                 span.fa-li
+            //-                     i.fas.fa-check
+            //-                 | Additional skills & tools: SQL, Rasa, ML, NLP, NLTK, Postman, Bitbucket
+            //-             li
+            //-                 span.fa-li
+            //-                     i.fas.fa-check
+            //-                 | Mobile-friendly, modern, & responsive design
+            //-             li
+            //-                 span.fa-li
+            //-                     i.fas.fa-check
+            //-                 | Secure, efficient, & detail-oriented work
+            //-         .subheading.text-primary.mb-2 Spoken Languages
+            //-         ul.fa-ul.mb-0
+            //-             li
+            //-                 span.fa-li
+            //-                     i.fas.fa-check
+            //-                 | English
+            //-             li
+            //-                 span.fa-li
+            //-                     i.fas.fa-check
+            //-                 | Spanish
+            //-             li
+            //-                 span.fa-li
+            //-                     i.fas.fa-check
+            //-                 | Portuguese
+            //- hr.m-0
             // Education
             section#education.resume-section
                 .resume-section-content
